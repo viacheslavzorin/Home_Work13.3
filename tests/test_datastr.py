@@ -14,3 +14,14 @@ def test_stack_push():
     stack.push("a")
     assert stack.top.data == "a"
     assert stack.top.next == None
+
+def test_stac_pop():
+    stack = Stack()
+    stack.push("1")
+    stack.push("a")
+    data = stack.pop()
+    assert stack.top.data == "1"
+    assert stack.top.next == None
+    assert data == "a"
+
+
