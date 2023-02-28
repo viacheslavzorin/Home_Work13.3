@@ -1,3 +1,4 @@
+
 class Node:
     """ Это узел """
     def __init__(self, data, next = None):
@@ -13,4 +14,15 @@ class Stack:
         new_node = Node(data)
         new_node.next = self.top
         self.top = new_node
+
+    def pop(self):
+        #self.top = self.top.next
+        #self.top.next = not self.top.next
+        #return self.top
+        #new_node = self.top
+        #self.top = self.top.next
+        #return self.top
+        s = self.top
+        self.top = self.top.next
+        return s.data
 
