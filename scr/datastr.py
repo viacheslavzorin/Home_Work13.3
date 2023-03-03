@@ -16,13 +16,11 @@ class Stack:
         self.top = new_node
 
     def pop(self):
-        #self.top = self.top.next
-        #self.top.next = not self.top.next
-        #return self.top
-        #new_node = self.top
-        #self.top = self.top.next
-        #return self.top
+        if self.top is None:
+            return None
+
         s = self.top
         self.top = self.top.next
         return s.data
+
 
