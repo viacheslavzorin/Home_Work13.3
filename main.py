@@ -14,7 +14,7 @@ print(stack.top.data)
 print(stack.top.next.data)
 print(stack.top.next.next.data)
 print(stack.top.next.next.next)
-#print(stack.top.next.next.next.data)
+# print(stack.top.next.next.next.data)
 
 stack = Stack()
 stack.push('data1')
@@ -22,11 +22,11 @@ data = stack.pop()
 
 # стэк стал пустой
 print(stack.top)
-#None
+# None
 
 # pop() удаляет элемент и возвращает данные удаленного элемента
 print(data)
-#'data1'
+# 'data1'
 
 
 stack = Stack()
@@ -36,8 +36,8 @@ data = stack.pop()
 
 # теперь последний элемента содержит данные data1
 print(stack.top.data)
-#'data1'
+# 'data1'
 
 # данные удаленного элемента
 print(data)
-#'data2'
+# 'data2'

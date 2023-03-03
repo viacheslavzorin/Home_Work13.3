@@ -1,9 +1,10 @@
-
 class Node:
     """ Это узел """
-    def __init__(self, data, next = None):
+
+    def __init__(self, data, next=None):
         self.data = data  # тут данные
-        self.next = next # тут ссылка на следующий
+        self.next = next  # тут ссылка на следующий
+
 
 class Stack:
     def __init__(self):
@@ -22,5 +23,3 @@ class Stack:
         s = self.top
         self.top = self.top.next
         return s.data
-
-
